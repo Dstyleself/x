@@ -39,7 +39,7 @@
         },
         methods : {
             toDetail(){
-                this.$router.push('/detail')
+                
             }
         }
     }

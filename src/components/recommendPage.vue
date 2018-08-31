@@ -9,7 +9,7 @@
         </div>  
         <el-carousel height="185px">
             <el-carousel-item v-for="(item,ind) in tagList" :key="ind">
-                <img :src="item.url" alt="">
+                <img :src="item.url" alt="" @click="toDetail">
             </el-carousel-item>
         </el-carousel>
     </div>
@@ -32,7 +32,9 @@
             }
         },
         methods : {
-         
+            toDetail(){
+                this.$router.push('/detail')
+            }
         }
     }
 </script>
