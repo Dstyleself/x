@@ -1,7 +1,7 @@
 <template>
     <div class="thumbnailRoot">
         <div class="thumbanil"  v-for="(data,ind) in listData" :key="ind">
-            <div class="thumbanilImg">
+            <div class="thumbanilImg" @click="toDetail">
                 <img :src="data.imgUrl" alt="">
             </div>
             <div class="title">{{data.title}}</div>
@@ -36,6 +36,11 @@
                     }
                 ]
             }
+        },
+        methods : {
+            toDetail(){
+                this.$router.push('/detail')
+            }
         }
     }
 </script>
@@ -49,12 +54,13 @@
         padding: 0 2%;
     }
     .thumbnailRoot .thumbanil .thumbanilImg{
-        height: 155px;
+        height: 180px;
         border-radius: 8px;
+        overflow: hidden;
     }
     .thumbnailRoot .thumbanil .thumbanilImg img{
         width: 100%;
-        height: 150px;
+        height: 175px;
     }
     .thumbnailRoot .thumbanil .title{
         overflow: hidden;

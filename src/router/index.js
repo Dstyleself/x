@@ -9,6 +9,9 @@ export default new Router({
     {
       path: '/',
       component : () => import('@/components/index') 
+    },{
+      path : '/detail',
+      component : () => import('@/components/details/details')
     }
   ]
 })

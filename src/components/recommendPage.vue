@@ -30,13 +30,16 @@
                     }
                 ]
             }
+        },
+        methods : {
+         
         }
     }
 </script>
 <style>
     .recommendPage .search{
-        height: 30px;
-        line-height: 30px;
+        height: 25px;
+        line-height: 25px;
         border: 1px #eaeaea solid;
         border-radius: 20px;
         text-align: center;
@@ -61,7 +64,7 @@
     .recommendPage .saomiao{
         float: right;
         position: relative;
-        top: 8px;
+        top: 6px;
         right: 15px;
     }
     .recommendPage .el-carousel{
