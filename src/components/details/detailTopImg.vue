@@ -7,10 +7,11 @@
             </div>
             <img src="@/assets/share.png" alt="" id="share">
         </div>
+        <player class="player"></player>
     </div>
 </template>
 <script>
-
+    import player from '@/components/details/player'
     export default{
         data(){
             return {
@@ -21,6 +22,9 @@
             toIndex(){
                 this.$router.push('/')
             }
+        },
+        components : {
+            player
         }
     }
 </script>
@@ -55,5 +59,13 @@
     height: 20px;
     top: -15px;
     right: 10px;
+}
+.topImgRoot .player{
+    position: absolute;
+    top: 157px;
+    height: 37px;
+    width: 100%;
+    background:#696969;
+    opacity: .6;
 }
 </style>

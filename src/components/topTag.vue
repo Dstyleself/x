@@ -14,7 +14,7 @@ export default{
                     tagName : '推荐',
                     tagPath : '/recommendPage'
                 },{
-                    tagName : '本地电台',
+                    tagName : 'FM电台',
                     tagPath : '/locationRadio'
                 },{
                     tagName : 'x音乐',
